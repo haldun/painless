@@ -1,0 +1,15 @@
+<tr>
+  <td><%= task.name %></td>
+  <td><%= task.description %></td>
+  <td><%= task.feature %></td>
+  <td><%= task.user %></td>
+  <td><%= task.priority %></td>
+  <td><%= task.original_estimate %></td>
+  <td><%= task.current_estimate %></td>
+  <td><%= task.elapsed %></td>
+  <td><%= task.remain %></td>
+  <td><%= link_to 'Show', project_task_path(project, task) %></td>
+  <td><%= link_to 'Edit', edit_project_task_path(project, task) %></td>
+  <td><%= link_to 'Destroy', project_task_path(project, task),
+                  confirm: 'Are you sure?', method: :delete %></td>
+</tr>

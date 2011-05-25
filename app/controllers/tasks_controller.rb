@@ -25,6 +25,7 @@ class TasksController < ApplicationController
     if task.save
       flash.notice = 'Task was successfully created.'
     end
+    respond_with project
   end
 
   def update
@@ -36,6 +37,6 @@ class TasksController < ApplicationController
 
   def destroy
     task.destroy
-    respond_with task
+    respond_with project
   end
 end

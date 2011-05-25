@@ -34,22 +34,7 @@
   </thead>
 
   <tbody>
-  <% project.tasks.each do |task| %>
-    <tr>
-      <td><%= task.name %></td>
-      <td><%= task.description %></td>
-      <td><%= task.feature %></td>
-      <td><%= task.user %></td>
-      <td><%= task.priority %></td>
-      <td><%= task.original_estimate %></td>
-      <td><%= task.current_estimate %></td>
-      <td><%= task.elapsed %></td>
-      <td><%= task.remain %></td>
-      <td><%= link_to 'Show', task %></td>
-      <td><%= link_to 'Edit', edit_task_path(task) %></td>
-      <td><%= link_to 'Destroy', task, confirm: 'Are you sure?', method: :delete %></td>
-    </tr>
-  <% end %>
+  <%= render project.tasks %>
   </tbody>
 </table>
 

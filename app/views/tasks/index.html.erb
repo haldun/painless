@@ -27,9 +27,10 @@
     <td><%= task.current_estimate %></td>
     <td><%= task.elapsed %></td>
     <td><%= task.remain %></td>
-    <td><%= link_to 'Show', task %></td>
-    <td><%= link_to 'Edit', edit_task_path(task) %></td>
-    <td><%= link_to 'Destroy', task, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Show', project_task_path(project, task) %></td>
+    <td><%= link_to 'Edit', edit_project_task_path(project, task) %></td>
+    <td><%= link_to 'Destroy', project_task_path(project, task),
+                    confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
