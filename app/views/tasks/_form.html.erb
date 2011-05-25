@@ -1,0 +1,19 @@
+<%= simple_form_for [project, task] do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.association :feature %>
+    <%= f.association :user %>
+    <%= f.input :priority %>
+    <%= f.input :original_estimate %>
+    <%= f.input :current_estimate %>
+    <%= f.input :elapsed %>
+    <%= f.input :remain %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= task.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= task.description %>
+</p>
+
+<p>
+  <b>Feature:</b>
+  <%= task.feature %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= task.user %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= task.priority %>
+</p>
+
+<p>
+  <b>Original estimate:</b>
+  <%= task.original_estimate %>
+</p>
+
+<p>
+  <b>Current estimate:</b>
+  <%= task.current_estimate %>
+</p>
+
+<p>
+  <b>Elapsed:</b>
+  <%= task.elapsed %>
+</p>
+
+<p>
+  <b>Remain:</b>
+  <%= task.remain %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(task) %> |
+<%= link_to 'Back', project_tasks_path(project) %>

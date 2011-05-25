@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  feature: 
+  user: 
+  priority: 1
+  original_estimate: 1
+  current_estimate: 1
+  elapsed: 1
+  remain: 1
+
+two:
+  name: MyString
+  description: MyText
+  feature: 
+  user: 
+  priority: 1
+  original_estimate: 1
+  current_estimate: 1
+  elapsed: 1
+  remain: 1
